@@ -25,7 +25,8 @@ public class AutoClickerUtil {
             int x = random.nextInt(screenSize.width - cpsWindow.getWidth());
             int y = random.nextInt(screenSize.height - cpsWindow.getHeight());
             cpsWindow.setLocation(x, y);
-
+            
+            cpsWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // im not that evil yet (:
             cpsWindow.setVisible(true);
         }
     }
